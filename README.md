@@ -188,7 +188,7 @@ Located in `Tensorflow_Oreintation/` folder - optimized production model achievi
 
 Complete production deployment with microservices architecture:
 
-**🔗 Repository:** [Bloom Web Application](https://github.com/YOUR_USERNAME/bloom-web-app)
+**🔗 Repository:** [Bloom Web Application](https://github.com/YSaiPranavReddy/plant-disease-detection-web)
 
 **Architecture:**
 - **Frontend:** Vercel - Responsive UI with drag-drop upload & PDF generation
