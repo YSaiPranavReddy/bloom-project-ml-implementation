@@ -136,7 +136,7 @@ Intermediate column matrices consume significant RAM. Minimized through batching
 
 ### Requirements
 
-<pre>``` pip install -r requirements.txt ```</pre>
+<pre>pip install -r requirements.txt</pre>
 
 **Note:** No TensorFlow, PyTorch, or JAX required.
 
