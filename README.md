@@ -167,14 +167,57 @@ Intermediate column matrices consume significant RAM. Minimized through batching
 
 ---
 
+
 ## 🔗 Related Projects
 
-**TensorFlow Production Model** - Same architecture optimized for production with 97% accuracy
+### TensorFlow Production Model (This Repository)
 
-**Full-Stack Web Application** - Complete deployment:
-- Frontend: Vercel
-- Backend: Node.js + Express + MongoDB (Render)
-- ML API: Flask + TensorFlow (Hugging Face Spaces)
+Located in `Tensorflow_Oreintation/` folder - optimized production model achieving **97% accuracy**:
+
+**Key Features:**
+- 5 convolutional blocks (32→64→128→256→512 filters)
+- Advanced techniques: cosine annealing, label smoothing, early stopping
+- 97% validation accuracy on 87,000+ images
+- <5 second inference time
+- Ready for production deployment
+
+
+---
+
+### Full-Stack Web Application
+
+Complete production deployment with microservices architecture:
+
+**🔗 Repository:** [Bloom Web Application](https://github.com/YOUR_USERNAME/bloom-web-app)
+
+**Architecture:**
+- **Frontend:** Vercel - Responsive UI with drag-drop upload & PDF generation
+- **Backend:** Render - Node.js + Express + MongoDB (JWT auth, credit system)
+- **ML API:** Hugging Face Spaces - Flask + TensorFlow + Docker (2GB RAM)
+
+**Live Demo:** [https://bloom--plant-disease-detector.vercel.app](https://bloom--plant-disease-detector.vercel.app)
+
+**Features:**
+- Real-time disease detection with confidence scores
+- User authentication and session management
+- Credit-based usage system (0.04 credits per prediction)
+- Automated PDF report generation
+- CORS-secured API endpoints
+- Deployed across 3 cloud platforms
+
+---
+
+### Comparison: NumPy vs TensorFlow
+
+| Metric | NumPy (From Scratch) | TensorFlow (Production) |
+|--------|----------------------|-------------------------|
+| **Accuracy** | 92% | 97% |
+| **Parameters** | 8.1M | 7.8M |
+| **Training Time** | ~4 hours (2 epochs, CPU) | ~1 hour (50 epochs, GPU) |
+| **Purpose** | Educational, mathematical proof | Production deployment |
+| **Differentiator** | Im2col optimization, Adam from scratch | Framework optimizations, deployment-ready |
+
+Both implementations validate the same architectural principles, demonstrating progression from mathematical foundations to production systems.
 
 ---
 
